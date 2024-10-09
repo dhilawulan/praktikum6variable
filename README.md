@@ -1,1 +1,1 @@
-# praktikum6variable
+# praktikum6introduction
