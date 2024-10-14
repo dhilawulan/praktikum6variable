@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Status Kelulusan Siswa</title>
+</head>
+<body>
+    <script>
+        const siswa = {
+            Andi: { Matematika: 70, Biologi: 80, Fisika: 70, Kimia: 90 },
+            Ria: { Matematika: 90, Biologi: 65, Fisika: 80, Kimia: 70 },
+            Bima: { Matematika: 100, Biologi: 70, Fisika: 95, Kimia: 50 },
+            Toni: { Matematika: 60, Biologi: 60, Fisika: 70, Kimia: 60 },
+            Putri: { Matematika: 70, Biologi: 100, Fisika: 80, Kimia: 75 }
+        };
+        const standarKelulusan = 60; 
+        let semuaLulus = true; 
+        let semuaTidakLulus = true;
+        for (const nama in siswa) {
+            const nilai = siswa[nama];
+            if (
+                nilai.Matematika >= standarKelulusan &&
+                nilai.Biologi >= standarKelulusan &&
+                nilai.Fisika >= standarKelulusan &&
+                nilai.Kimia >= standarKelulusan
+            ) {
+                console.log(nama + " Lulus");
+                semuaTidakLulus = false;
+            } else {
+                console.log(nama + " Tidak Lulus");
+                semuaLulus = false;
+            }
+        }
+        if (semuaLulus) {
+            console.log("Semua Lulus");
+        } else if (semuaTidakLulus) {
+            console.log("Semua Tidak Lulus");
+        }
+    </script>
+</body>
+</html>
