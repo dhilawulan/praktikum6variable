@@ -5,17 +5,18 @@
 </head>
 <body>
     <script>
-        const totalKunjungan = 12; 
+        const totalKunjungan = parseInt(prompt("Masukkan total kunjungan ke salon:"));
         const kupon = totalKunjungan; 
         const bonusGratis = Math.floor(kupon / 10); 
-        console.log("Total Kunjungan: " + totalKunjungan);
-        console.log("Banyak Potongan Kupon: " + kupon);
-
+        let pesan = "Total Kunjungan: " + totalKunjungan + "\n" +
+                    "Banyak Potongan Kupon: " + kupon + "\n";
+  
         if (bonusGratis > 0) {
-            console.log("Selamat! Anda mendapatkan " + bonusGratis + " kunjungan gratis.");
+            pesan += "Selamat! Anda mendapatkan " + bonusGratis + " kunjungan gratis.";
         } else {
-            console.log("Anda belum mendapatkan kunjungan gratis.");
+            pesan += "Anda belum mendapatkan kunjungan gratis.";
         }
+        alert(pesan);
     </script>
 </body>
 </html>
