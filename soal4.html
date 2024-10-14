@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Perhitungan Total Pembelian</title>
+</head>
+<body>
+    <script>
+        const hargaBarang = 20000; 
+        const jumlahBarang = 60;    
+        const totalHarga = hargaBarang * jumlahBarang;
+
+        let diskon = 0;
+        if (jumlahBarang > 50) {
+            diskon = totalHarga * 0.10; 
+        }
+
+        const hargaSetelahDiskon = totalHarga - diskon;
+
+        console.log("Harga Keseluruhan Tanpa Diskon: Rp " + totalHarga);
+        console.log("Diskon yang Diberikan: Rp " + diskon);
+        console.log("Harga Setelah Diskon: Rp " + hargaSetelahDiskon);
+    </script>
+</body>
+</html>
