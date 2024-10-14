@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Penghitungan Kunjungan Salon</title>
+</head>
+<body>
+    <script>
+        const totalKunjungan = 12; 
+        const kupon = totalKunjungan; 
+        const bonusGratis = Math.floor(kupon / 10); 
+        console.log("Total Kunjungan: " + totalKunjungan);
+        console.log("Banyak Potongan Kupon: " + kupon);
+
+        if (bonusGratis > 0) {
+            console.log("Selamat! Anda mendapatkan " + bonusGratis + " kunjungan gratis.");
+        } else {
+            console.log("Anda belum mendapatkan kunjungan gratis.");
+        }
+    </script>
+</body>
+</html>
